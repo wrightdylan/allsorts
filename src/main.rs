@@ -1,6 +1,8 @@
 use bheap::*;
+use bubble_sort::SortOrder;
 
 mod bheap;
+mod bubble_sort;
 mod heap_sort;
 mod insertion_sort;
 mod merge_sort;
@@ -59,5 +61,16 @@ fn main() {
     insertion_sort::ins_sort(&mut isa2);
     println!("i32: {:?}", isa1);
     println!("f64: {:?}", isa2);
-}
 
+    println!("Bubble Sort");
+    let mut bsa1 = [12, 11, 13, 5, 6, 7];
+    let mut bsa2 = [11.4, 4.2, 24.1, 56.9, 17.4, 4.3, -1.2];
+    bubble_sort::bubble_sort(&mut bsa1, SortOrder::Asc);
+    bubble_sort::bubble_sort(&mut bsa2, SortOrder::Asc);
+    println!("i32 (asc): {:?}", bsa1);
+    println!("f64 (asc): {:?}", bsa2);
+    bubble_sort::bubble_sort(&mut bsa1, SortOrder::Desc);
+    bubble_sort::bubble_sort(&mut bsa2, SortOrder::Desc);
+    println!("i32 (desc): {:?}", bsa1);
+    println!("f64 (desc): {:?}", bsa2);
+}
