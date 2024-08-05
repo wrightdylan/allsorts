@@ -1,5 +1,5 @@
 // main function to do the heap sort
-pub fn sort<T: PartialOrd>(arr: &mut [T]) {
+pub fn heap_sort<T: PartialOrd>(arr: &mut [T]) {
     let n = arr.len();
 
     // Build heap (rearrange array)

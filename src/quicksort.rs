@@ -1,4 +1,4 @@
-pub fn quicksort<T: PartialOrd>(arr:&mut [T]) {
+pub fn quicksort<T: PartialOrd>(arr: &mut [T]) {
     _quicksort(arr, 0, (arr.len() - 1) as isize);
 }
 
