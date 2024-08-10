@@ -15,11 +15,4 @@ public class InsertionSort {
             arr[j + 1] = value;
         }
     }
-
-    // A utility function to print array of size n
-    static <T> void printArray(T[] arr) {
-        for (T element : arr)
-            System.out.print(element + " ");
-        System.out.println();
-    }
 }

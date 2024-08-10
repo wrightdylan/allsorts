@@ -46,11 +46,4 @@ public class QuickSort {
             quickSort(arr, pi + 1, high);
         }
     }
-
-    // To print sorted array
-    public static <T> void printArr(T[] arr) {
-        for (T element : arr)
-            System.out.print(element + " ");
-        System.out.println();
-    }
 }

@@ -11,5 +11,6 @@ Update: Algorithms in Rust now packaged as a library.
 - Heap Sort (another implementation).
 - Insertion Sort. Time complexity is O(n<sup>2</sup>) for average and worst case, O(n) for best case, and space complexity of O(1).
 - Merge Sort. Time complexity is O(n log<sub>2</sub>n) in all cases, and space complexity is O(n).
-- Quicksort. This is O(n log<sub>2</sub>n) at best and average, and O(n<sup>2</sup>) in the worst case. Space complexity is O(log<sub>2</sub>n).
+- Quicksort. This is O(n log<sub>2</sub>n) at best and average, and O(n<sup>2</sup>) in the worst case. Space complexity is O(n).
 - Selection sort. Time complexity is O(n<sup>2</sup>) for all cases, and space complexity of O(1).
+- Shell sort. Time complexity is O(n log<sub>2</sub>n) in best and average cases, O(n<sup>2</sup>) at worst case, and space complexity of O(1).
