@@ -98,4 +98,22 @@ fn main() {
     shell_sort(&mut ssa4);
     println!("i32: {:?}", ssa3);
     println!("f64: {:?}", ssa4);
+
+    // Bogosort
+    println!("Bogosort");
+    let mut bsa3 = [12, 11, 13, 5, 6, 7];
+    let mut bsa4 = [11.4, 4.2, 24.1, 4.3, 56.9, 17.4, 4.3, -1.2];
+    let bsatt1 = bogosort(&mut bsa3);
+    println!("i32: {:?} in {} attempts", bsa3, bsatt1);
+    let bsatt2 = bogosort(&mut bsa4);
+    println!("f64: {:?} in {} attempts", bsa4, bsatt2);
+
+    // Timsort
+    println!("Timsort");
+    let mut tsa1 = [12, 11, 13, 5, 6, 7];
+    let mut tsa2 = [11.4, 4.2, 24.1, 4.3, 56.9, 17.4, 4.3, -1.2];
+    timsort(&mut tsa1);
+    timsort(&mut tsa2);
+    println!("i32: {:?}", tsa1);
+    println!("f64: {:?}", tsa2);
 }

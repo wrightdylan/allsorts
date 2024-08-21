@@ -107,6 +107,21 @@ public class TestAll {
         printArray(ssa3);
         System.out.println("Sorted double array is");
         printArray(ssa4);
+
+        // Bogosort
+        System.out.println("Bogosort");
+        Integer[] bsa3 = { 12, 11, 13, 5, 6, 7 };
+        Double[] bsa4 = { 11.4, 4.2, 24.1, 56.9, 17.4, 4.3, -1.2 };
+
+        BogoSort bsob3 = new BogoSort();
+        bsob3.sort(bsa3);
+        BogoSort bsob4 = new BogoSort();
+        bsob4.sort(bsa4);
+
+        System.out.println("Sorted int array is");
+        printArray(bsa3);
+        System.out.println("Sorted double array is");
+        printArray(bsa4);
     }
 
     static <T> void printArray(T[] arr) {
